@@ -1,4 +1,4 @@
-package entity;
+package entity.maths;
 
 public class Circle {
     private double radius = 1.0;
@@ -19,11 +19,16 @@ public class Circle {
         return color;
     }
 
+    public double getArea() {
+        return Math.PI*radius*radius;
+    }
+
     @Override
     public String toString() {
         return "Circle{" +
-                "radius=" + radius +
-                ", color='" + color + '\'' +
+                "radius = " + radius + "," + '\n' +
+                "color = " + color + "," + '\n' +
+                "area = " + getArea() + '\n' +
                 '}';
     }
 }

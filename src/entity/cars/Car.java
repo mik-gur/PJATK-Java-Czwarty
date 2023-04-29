@@ -1,4 +1,4 @@
-package entity;
+package entity.cars;
 
 public class Car {
     private int speed;
@@ -13,5 +13,17 @@ public class Car {
 
     public double getSalePrice() {
         return regularPrice;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public double getRegularPrice() {
+        return regularPrice;
+    }
+
+    public String getColor() {
+        return color;
     }
 }

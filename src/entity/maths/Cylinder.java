@@ -1,8 +1,7 @@
-package entity;
+package entity.maths;
 
 public class Cylinder extends Circle {
     private double height = 4.0;
-    private double volume = 2.2;
 
     public Cylinder() {
     }
@@ -21,14 +20,17 @@ public class Cylinder extends Circle {
     }
 
     public double getVolume() {
-        return volume;
+        return super.getArea() * height;
     }
 
     @Override
     public String toString() {
         return "Cylinder{" +
-                "height=" + height +
-                ", volume=" + volume +
+                "height = " + height + "," + '\n' +
+                "radius = " + super.getRadius() + "," + '\n' +
+                "color = " + super.getColor() + "," + '\n' +
+                "volume = " + getVolume() + "," + '\n' +
+                "area = " + super.getArea() + '\n' +
                 '}';
     }
 }

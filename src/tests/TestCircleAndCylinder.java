@@ -1,7 +1,7 @@
 package tests;
 
-import entity.Circle;
-import entity.Cylinder;
+import entity.maths.Circle;
+import entity.maths.Cylinder;
 
 public class TestCircleAndCylinder {
     public static void main(String[] args) {
@@ -9,13 +9,15 @@ public class TestCircleAndCylinder {
         Circle circle2 = new Circle();
         System.out.println("Circle1 radius: " + circle1.getRadius());
         System.out.println("Circle1 color: " + circle1.getColor());
+        System.out.println("Circle1 area: " + circle1.getArea());
         System.out.println(circle1);
-        System.out.println("");
+        System.out.println('\n');
 
         System.out.println("Circle2 radius: " + circle2.getRadius());
         System.out.println("Circle2 color: " + circle2.getColor());
+        System.out.println("Circle2 color: " + circle2.getArea());
         System.out.println(circle2);
-        System.out.println("");
+        System.out.println('\n');
 
 
         Cylinder cylinder1 = new Cylinder();
@@ -25,23 +27,26 @@ public class TestCircleAndCylinder {
         System.out.println("Cylinder1 volume: " + cylinder1.getVolume());
         System.out.println("Cylinder1 radius: " + cylinder1.getRadius());
         System.out.println("Cylinder1 color: " + cylinder1.getColor());
+        System.out.println("Cylinder1 area: " + cylinder1.getArea());
         System.out.println(cylinder1);
-        System.out.println("");
+        System.out.println('\n');
 
 
         System.out.println("Cylinder2 height: " + cylinder2.getHeight());
         System.out.println("Cylinder2 volume: " + cylinder2.getVolume());
         System.out.println("Cylinder2 radius: " + cylinder2.getRadius());
         System.out.println("Cylinder2 color: " + cylinder2.getColor());
+        System.out.println("Cylinder2 area: " + cylinder2.getArea());
         System.out.println(cylinder2);
-        System.out.println("");
+        System.out.println('\n');
 
 
         System.out.println("Cylinder3 height: " + cylinder3.getHeight());
         System.out.println("Cylinder3 volume: " + cylinder3.getVolume());
         System.out.println("Cylinder3 radius: " + cylinder3.getRadius());
         System.out.println("Cylinder3 color: " + cylinder3.getColor());
+        System.out.println("Cylinder3 area: " + cylinder3.getArea());
         System.out.println(cylinder3);
-        System.out.println("");
+        System.out.println('\n');
     }
 }

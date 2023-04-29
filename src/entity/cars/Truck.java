@@ -1,4 +1,4 @@
-package entity;
+package entity.cars;
 
 import interfaces.Purchase;
 
@@ -13,12 +13,22 @@ public class Truck extends Car implements Purchase {
     @Override
     public double getSalePrice() {
         if (weight > 2000)
-        return super.getSalePrice() * 0.90;
+            return super.getSalePrice() * 0.90;
         return super.getSalePrice();
     }
 
     @Override
     public String getPurchaseInfo() {
         return "TRUCK: ";
+    }
+
+    @Override
+    public String toString() {
+        return "Truck{" +
+                "speed = " + super.getSpeed() + "," + '\n' +
+                "regularPrice = " + super.getRegularPrice() + "," + '\n' +
+                "color = " + super.getColor() + "," + '\n' +
+                "weight = " + weight +
+                '}';
     }
 }
